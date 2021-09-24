@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url(https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +37,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+.weather-jumbotron{
+  margin-top: 20px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,149,53,0.5368522408963585) 0%, rgba(0,212,255,1) 100%);
+   box-shadow: 10px 10px 20px 10px;
+} 
+
+
+.weather-footer{
+  margin: auto;
+  
+  padding: 50px;
+  background: black;
+  height: 239px;
+  font-size: xx-large;
+  color: rgb(81, 100, 84);
+  box-shadow: 5px 10px 20px 20px;
+  align-items: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,149,53,0.5368522408963585) 0%, rgba(0,212,255,1) 100%);
+  
+}  
+.weather-card{
+  color: rgb(31, 31, 49);
+  border: 1px solid black;
+  margin-top: 30px;
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 30px 30px;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,149,53,0.5368522408963585) 0%, rgba(0,212,255,1) 100%);
+  
+}
+.search-city{
+  margin-top: 150px;
+  font-size: 12px;
+  padding: 2px 5px !important;
+  
+}
+.weather-card-list{
+  background-color: transparent;
 }

@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import WeatherNavBar from './component/WeatherNavBar';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import { Container } from 'react-bootstrap';
+import WeatherCard from './component/WeatherCard';
+import Home from './component/WeatherHome';
+import WeatherFooter from './component/Footer'
+import WeatherJumbotron from './component/Jumbotron';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='App'>
+    <Router >
+        <WeatherNavBar/>
+        <WeatherJumbotron/>
+          <Container>
+              {/* <WeatherCard/> */}
+              <Home/>
+          </Container>    
+        <WeatherFooter/>
+    </Router>
     </div>
   );
 }
