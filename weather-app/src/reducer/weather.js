@@ -1,11 +1,11 @@
 import { initialState } from "../store";
 
-export const weatherReducer = (state=initialState,action)=>{
+ const weatherReducer = (state=initialState,action)=>{
     switch(action.type){
         case 'FILL_WEATHER':
          return{
-             ...state,
-             data:action.payload
+                ...state,
+                city:action.payload
          }
         case 'FILL_WEATHER_LOADING':
             return{
@@ -17,5 +17,9 @@ export const weatherReducer = (state=initialState,action)=>{
                 ...state,
                 error:action.payload
             }
+            default:
+                return state
     }
 }
+export default weatherReducer
+// export type AppState = ReturnType<typeof weatherReducer>;
