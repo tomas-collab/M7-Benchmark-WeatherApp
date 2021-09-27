@@ -17,7 +17,7 @@ const WeatherCard = ({...props})=>{
    
          <div className='weather-card d-flex'>
                
-                
+                <>
               <Col >
                 <ListGroup className='weather-card-list'>
                    <h4><IoIosPartlySunny color="yellow"/> {props.state.city.name && props.state.city.name}</h4>
@@ -25,7 +25,8 @@ const WeatherCard = ({...props})=>{
                           <ListGroupItem variant="primary">{ props.state.city.coord && props.state.city.coord.lat}</ListGroupItem>
                           <ListGroupItem variant="primary">{ props.state.city.coord && props.state.city.coord.lon}</ListGroupItem>
 
-                         <h4 className='mt-5'>change metrics</h4>  
+                         <h4 className='mt-5'>change metrics</h4> 
+                          
                 
                          <button className='btn-dark mt-2' onClick={()=>props.setMetrics('imperial')}>Fahrenheit</button>
                          <button  className='btn-dark mt-2' onClick={()=>props.setMetrics('metric')}>Celcius</button>  
